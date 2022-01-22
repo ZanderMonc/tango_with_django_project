@@ -20,6 +20,6 @@ from rango import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('rango/', include('rango.urls')),
+    path('rango/', include('rango.urls')),#maps any URLs starting with rango/ for handling by rango.
     path('admin/', admin.site.urls),
 ]
