@@ -19,6 +19,9 @@
                 <strong>No pages currently in category.</strong>
                 <a href="/rango/">rango</a><br />
                 {% endif %}
+
+            <a href="/rango/category/{{ category.slug }}/add_page/">Add Page</a> <br />
+
             {% else %}
                 The specified category does not exist.
             {% endif %}
